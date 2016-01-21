@@ -1,2 +1,2 @@
-# onesignnal-node-sample
+# onesignnal-node
 onesignal.con node + rest interface
