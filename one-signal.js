@@ -90,10 +90,15 @@ os.prototype = {
 		var data = this.predata();
 
 		// prepare data
-		data.include_player_ids	= (typeof uuids === 'string')? [uuids] : uuids;
-		data.headings			= this.createObj('en', title);
-		data.contents			= this.createObj('en', message);
-		data.data				= params;
+		data.headings	= this.createObj('en', title);
+		data.contents	= this.createObj('en', message);
+		data.data		= params;
+
+		// target or broadcast
+		if(uuids !== null)
+			data.include_player_ids	= (typeof uuids === 'string')? [uuids] : uuids;
+		else
+			data.included_segments = ['All'];
 
 		this.raw_send(data, function(res){
 			res = res.body;
