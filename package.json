@@ -1,0 +1,17 @@
+{
+  "name": "onesignal-rest",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test/index.js"
+  },
+  "author": "Zhakkapong Ponngam <zhakkapong@gmail.com>",
+  "license": "GPL",
+  "dependencies": {
+    "unirest": "^0.4.2"
+  },
+  "devDependencies": {
+    "vows": "^0.8.1"
+  }
+}
